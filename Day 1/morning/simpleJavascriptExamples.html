@@ -7,7 +7,7 @@
             /*  here's a
                 multi-line javascript comment */
             
-            function click(){
+            function clickMe(){
                 alert('I clicked a link');
             }
             
@@ -21,8 +21,8 @@
             document.writeln("<h2>this is some html</h2>");
             
         </script>
-        <!-- I'll come back and look at this code and fix this link.-->
-       <a href="#" onclick="click();">Click Me</a> 
+        <!-- I'll come back and look at this code and fix this link.  It turns out 'click' is a reserved word in javascript.  Don't use it for a function name. -->
+       <a href="#" onclick="clickMe();">Click Me</a> 
         <br/> 
        <a href="#" onclick="alert('This is was clicked');">try clicking me</a>
     </body>
