@@ -1,0 +1,38 @@
+<html>
+<!-- our basic 'shell' for javascript work -->
+    <head>
+        <script>
+            // this function is going to take a 'parameter'  In other words, we're going to pass a value into it
+            function validate(inputfield){
+                // if statement to see what was entered (if anything) in the inputfield
+                alert("validate is running, inputfield = " + inputfield);
+                if (inputfield.value == ""){
+                    alert("Field must have a value");
+                }else{
+                    // they did enter something... lets output it back to them
+                    alert("Cool, you entered " + inputfield.value); 
+                }
+            }
+            
+        </script>
+    </head>
+    <body>
+        <form name="form1">
+            <!-- onblur is an html event related to mouse movement.
+                'this' is a reference to the input element called fname -->
+            First Name: <input type="text" name="fname" onblur="validate(this)"/>
+            <br/>
+            <br/>
+            <!-- here, 'this' will refer to the text box/input element called emailTxt -->
+            Email:  <input type="text" name="emailTxt" onblur="validate(this)"/>
+            <br/>
+            <br/>
+        </form>
+    </body>
+    
+    
+    
+    
+    
+    
+</html>
