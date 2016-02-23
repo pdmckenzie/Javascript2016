@@ -1,0 +1,37 @@
+<html>
+<!-- our basic 'shell' for javascript work -->
+    <head>
+        <script>
+            // a global variable, unassigned
+            var sButton;
+            
+            function basicIf(){
+                if(sButton == "A"){
+                    //escape those single quotes so they become
+                    // part of the string
+                    alert("You pressed button \'A\'");
+                }else{
+                    alert("You pressed button \'B\'");
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <form>
+            <!-- here in my onclick event, I'm doing two things:
+            I'm assigning a values to our global variable sButton, and
+            I'm calling the basicIf() function  -->
+            <input type="button" value="Button A" onclick="sButton='A';basicIf()"/>
+            <br/><br/>
+            <input type="button" value="Button B" onclick="sButton='B';basicIf()"/>
+        </form>
+    
+    </body>
+
+
+
+
+
+
+
+</html>
